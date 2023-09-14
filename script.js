@@ -27,13 +27,13 @@ function update() {
     const actives = document.querySelectorAll('.active')
     progress.style.width = (actives.length - 1) / (steps.length - 1) * 100 + '%'
 
-if (numStep === 1) {
-    btnPrev.disabled = true
-}else if(numStep === steps.length) {
-    btnNext.disabled = true
-}else {
-    btnPrev.disabled = false
-    btnNext.disabled = false
+    if (numStep === 1) {
+        btnPrev.disabled = true
+    }else if(numStep === steps.length) {
+        btnNext.disabled = true
+    }else {
+        btnPrev.disabled = false
+        btnNext.disabled = false
 }
 
 }
